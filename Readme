@@ -1,0 +1,5 @@
+Instructions to make it work -
+:Download an IDE (Pycharm works the best)
+:Add the required modules (gTTS , playsound)
+:Requires a working internet connection to fetch stuff.
+:It's pretty simple to add more functionality by defining a function and adding to the desired section.
