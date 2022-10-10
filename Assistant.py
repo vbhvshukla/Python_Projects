@@ -37,6 +37,11 @@ def help():
 def calculator():
     print("calculator")
 
+def greet(yo):
+    name = raw_input("What's your name: ")
+    return yo + name
+print greet("hi! ")
+
 
 #================================================Asking the user for input==============================================
 while True:
