@@ -1,3 +1,19 @@
+## PKMKB
+ PYTHON ASSISTANT AND SUB PROJECTS
+
+Description :
+This repository contains a voice assisted assistant being developed in python.
+Currently , it has got some basic functions such as time/date,help,calculator
+It uses Google's Text To Speech(gTTS modules) to enable the assistant to be 
+vocal.As it is in development phase it is being open sourced to enable contributors
+to add more features. Even showcase other projects related or non related to this
+in python.
+
+Steps to contribute : 
+
+
+
+
 Instructions to make it work -
 :Download an IDE (Pycharm works the best)
 :Add the required modules (gTTS , playsound)
