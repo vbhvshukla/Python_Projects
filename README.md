@@ -27,12 +27,7 @@ As it is in development phase it is being open sourced to enable contributors to
 Even showcase other projects related or non related to this in python.
 
 # 👟Steps for Contributing
-<!-- 1. $ cd projects/my-project
-2. $ git init
-3. $ git add.
-4. $ git commit -m "Initial commit"
-5. $ git remote add origin
-6. $ git push origin master -->
+
 1. Fork the repository
 2. clone it in your local machine
 
@@ -66,8 +61,20 @@ Instructions to make it work -
 :It's pretty simple to add more functionality by defining a function and adding to the
 :desired section.
 
+# Contributors 🎉
+These people are sole backbone for this software
+
+<a href="https://github.com/vbhvshukla/Python_Projects/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vbhvshukla/Python_Projects" />
+</a>
+
+<br>
+<div align="center">
+Show some ❤️ by starring this awesome repository!
+</div>
+
 ## All the Best.
 
 
-***********USELESS PR's JUST TO GET SWAGS WON'T GET ACCEPTED*****************
+***USELESS PR's JUST TO GET SWAGS WON'T GET ACCEPTED***
 
