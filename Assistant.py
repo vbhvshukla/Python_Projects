@@ -1,6 +1,7 @@
 from gtts import gTTS
 from playsound import playsound
 import random
+import pyttsx3
 #===============================================INITIALIZATION==========================================================
 initialization = "Initializing data"
 language = 'en'
@@ -35,12 +36,23 @@ def help():
           "3)nofunc\n"
           "4)calculator\n")
 def calculator():
-    print("calculator")
+    num1 = int(input("enter first number= "))
+    num2 = int(input ("enter second number= "))
+    op = input("+,-,*,/ ? = ")
+    if op == "+":
+        print (num1+num2)
+    elif op == "-":
+        print(num1-num2)
+    elif op == "*":
+        print(num1*num2)
+    elif op == "/":
+        print(num1/num2)
+    else:
+        print("Please choose from the given options only (+,-,*,/)")
 
 def greet(yo):
-    name = raw_input("What's your name: ")
-    return yo + name    
-print greet("hi! ")
+    name = input("What's your name: ")
+    speak(yo + name)    
 
 def speak(audio):
      
@@ -63,22 +75,22 @@ def speak(audio):
 
 #================================================Asking the user for input==============================================
 while True:
-   r1 = random.randint(1, 10000000)
-   r2 = random.randint(1, 10000000)
-   task = input('What should I do for you?')
-   mytask = gTTS(text="Received Query   "+task , lang=language , slow=False)
-   mytask.save(str(r1)+("task")+str(r2)+(".mp3"))
-   playsound(str(r1)+("task")+str(r2)+(".mp3"))
-if task==("time"):
-       time()
-   elif task==("calculate"):
-       calculator()
-   elif task==("help"):
-       help()
-   elif task==("calculator"):
-       calculator()
-   else:
-       nofunc()
+    r1 = random.randint(1, 10000000)
+    r2 = random.randint(1, 10000000)
+    task = input('What should I do for you?')
+    mytask = gTTS(text="Received Query " + task, lang=language, slow=False)
+    mytask.save(str(r1) + "task" + str(r2) + ".mp3")
+    playsound(str(r1) + "task" + str(r2) + ".mp3")
 
+    if task == "time":
+        time()
+    elif task == "calculate":
+        calculator()
+    elif task == "help":
+        help()
+    elif task == "calculator":
+        calculator()
+    else:
+        nofunc()
 
 
